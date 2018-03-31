@@ -1,0 +1,59 @@
+<view class='page'>
+<!--轮播图  -->
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{lunboarr}}" wx:key="{{index}}">
+      <swiper-item class="swiperItem">
+        <image src="{{item.img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+<!--公告  -->
+<view class='GreyBackground'></view>
+<view class="notice">
+  <view class='hint'>
+    <image class='notice-img' src='../../images/laba.png'></image>
+    <text class='title'>公告：</text>
+  </view>
+  <swiper class='carousel' circular="true" autoplay="{{autoplay}}" interval="{{intervaltext}}" duration="{{duration}}" vertical="{{vertical}}">
+    <block wx:for="{{title}}" wx:key="{{index}}">
+      <swiper-item>
+        <text>{{item}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='GreyBackground'></view>
+<view class='moduleer'>
+  <view class='child' data-id="0" catchtap='toExhibition'>
+    <image  src='../../images/rongyu.png'></image>
+    <view>荣誉成绩</view>
+  </view>
+  <view class='child' data-id="1" catchtap='toExhibition'>
+    <image  src='../../images/zhidao.png'></image>
+    <view>教练指导</view>
+  </view>
+  <view class='child' data-id="2" catchtap='toExhibition'>
+    <image  src='../../images/xunlian.png'></image>
+    <view>训练场地</view>
+  </view>
+</view>
+<view class='introduce'>
+  <text class='headline'>廊坊崇德射箭俱乐部</text>
+  <view class='specific'>廊坊崇德射箭俱乐部是廊坊地区专业射箭俱乐部，内设8米箭道九条，18米专业箭道六条，30米箭道6条，馆内提供各种专业弓箭器材，能满足不同娱乐、训练、比赛需求。同时还设有VIP休息区和娱乐区，可供会员品茶，休闲，论道。继承和发扬传统弓和传统射艺，兼容并蓄世界各地射箭文化，带动更多的人接触弓箭，了解射艺，这是崇德射箭矢志不渝的目标。我们相信，在不久的将来，射箭运动会在全国更加普及，传统射艺文化会更加深入人心，崇德射箭俱乐部必将能为复兴射箭运动贡献重要力量！</view>
+</view>
+<view class="contact">
+  <view>
+    <text class="dianshou">手机号：</text>
+    <text>13919441828，13833654610</text>
+  </view>
+  <view>
+    <text class="dianshou">电话：</text>
+    <text>0316-2277219</text>
+  </view>
+  <view>
+    <text class="dianshou">地址：</text>
+    <text>廊坊市西昌路颐和佳苑小区西侧200米（看守所北侧道路进入西行200米）</text>
+  </view>
+</view>
+</view>
+<include src="../../utils/footer.wxml"/>

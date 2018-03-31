@@ -1,0 +1,46 @@
+.page {
+  font-family: PingFangSC-Medium;
+  color: #4a4a4a;
+  font-size: 0.87rem;
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  overflow: hidden;
+}
+image{
+  vertical-align: middle;
+}
+.footerfather{
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+}
+.footer{
+  width: 100%;
+  height: 90rpx;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  padding:12rpx 0px 24rpx 0rpx;
+}
+.footertitle{
+  width: 33.3%;
+  text-align: center;
+  font-size:36rpx;
+  color: #5c5c5c;
+}
+.footertitle view{
+  margin-top: 8rpx;
+  color: #F8BA42;
+}
+.footertitle image{
+  width: 50rpx;
+  height: 50rpx;
+}

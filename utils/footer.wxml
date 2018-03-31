@@ -1,0 +1,16 @@
+<view class='footerfather'>
+  <view class='footer'>
+    <view url='../index/index' bindtap='toIndex' class='footertitle'>
+      <image src='../../images/shouye.png'></image>
+      <view >首页</view>
+    </view>
+    <view bindtap="bohao" class='footertitle'>
+      <image src='../../images/bohao.png'></image>
+      <view>一键拨号</view>
+    </view>
+    <view url='../navigation/navigation' bindtap='navigation' class='footertitle'>
+      <image src='../../images/daohang.png'></image>
+      <view>导航</view>
+    </view>
+  </view>
+</view>

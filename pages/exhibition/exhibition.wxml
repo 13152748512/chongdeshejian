@@ -1,0 +1,9 @@
+<view class="page">
+  <view class='showtitle'>{{showtitle}}</view>
+  <block wx:for="{{imglist}}" wx:key="{{index}}">
+    <image class="exhibitionimg" src='{{item}}'></image>
+  </block>
+  
+</view>
+<include src="../../utils/footer.wxml"/>
+
